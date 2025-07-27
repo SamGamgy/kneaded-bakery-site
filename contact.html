@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kneaded Bakery | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- External script will handle form submission -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Kneaded Bakery</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="section-title">Contact / Order Inquiry</h1>
+      <p>
+        Ready to order or check availability? Send us a note using the form
+        below—we’ll confirm pickup time and total. Remember, we cannot accept
+        payment or orders online; this form simply starts the conversation in
+        accordance with Virginia Cottage Food Law.
+      </p>
+      <div class="contact-form">
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div>
+            <label for="interest">What items are you interested in?</label>
+            <textarea id="interest" name="interest" rows="3" placeholder="Tell us what you’d like…"></textarea>
+          </div>
+          <div>
+            <label for="pickup">Preferred pickup date</label>
+            <input type="text" id="pickup" name="pickup" placeholder="e.g. July 28" />
+          </div>
+          <button type="submit">Submit Inquiry</button>
+        </form>
+        <div id="response-msg" style="display:none; background:#e9dccc; padding:1rem; border-radius:5px; margin-top:1rem; color:#6b4226;">
+          Thank you! We received your request and will follow up to confirm
+          availability and pickup arrangements.
+        </div>
+      </div>
+      <p style="font-size:0.85rem; color:#7c5838; margin-top:1rem;">
+        These products are homemade and not subject to state inspection. Sold
+        under Virginia Cottage Food Laws.
+      </p>
+    </main>
+
+    <footer>
+      <p class="disclaimer">
+        These products are homemade and not subject to state inspection. Sold
+        under Virginia Cottage Food Laws.
+      </p>
+      <p class="privacy">
+        We collect name, email, phone, product interest and pickup preferences
+        solely to manage your bakery order. Your data is securely stored,
+        exportable by the owner and never sold—owned fully by Kneaded Bakery.
+        If you'd like your data removed, just reach out.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
