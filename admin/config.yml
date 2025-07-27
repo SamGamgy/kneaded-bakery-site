@@ -14,6 +14,10 @@ collections:
         name: "menu"
         editor:
           preview: false
+        fields:
+          - label: "Menu Content"
+            name: "body"
+            widget: "markdown"
   - name: "gallery"
     label: "Gallery Page"
     files:
@@ -22,3 +26,7 @@ collections:
         name: "gallery"
         editor:
           preview: false
+        fields:
+          - label: "Gallery Content"
+            name: "body"
+            widget: "markdown"
