@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: SamGamgy/kneaded-bakery-site
+  branch: main
+publish_mode: editorial_workflow
+media_folder: images/uploads
+public_folder: /images/uploads
+collections:
+  - name: "menu"
+    label: "Menu Page"
+    files:
+      - file: "menu.html"
+        label: "Menu"
+        name: "menu"
+        editor:
+          preview: false
+  - name: "gallery"
+    label: "Gallery Page"
+    files:
+      - file: "gallery.html"
+        label: "Gallery"
+        name: "gallery"
+        editor:
+          preview: false
